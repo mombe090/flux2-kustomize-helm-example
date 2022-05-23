@@ -1,16 +1,16 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: podinfo
-  namespace: podinfo
+  name: minio
+  namespace: minio
 spec:
-  releaseName: podinfo
+  releaseName: minio
   chart:
     spec:
-      chart: podinfo
+      chart: minio
       sourceRef:
         kind: HelmRepository
-        name: podinfo
+        name: minio
         namespace: flux-system
   interval: 5m
   install:
@@ -19,8 +19,6 @@ spec:
   # Default values
   # https://github.com/stefanprodan/podinfo/blob/master/charts/podinfo/values.yaml
   values:
-    cache: redis-master.redis:6379
-    ingress:
-      enabled: true
-      annotations:
-        kubernetes.io/ingress.class: nginx
+    auth:
+      rootUser: admin
+      rootPassword: "mombe090"
