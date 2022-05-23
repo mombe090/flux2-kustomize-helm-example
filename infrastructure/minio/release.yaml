@@ -21,4 +21,4 @@ spec:
       type: LoadBalancer
     auth:
       rootUser: "admin"
-      rootPassword: "Hello2000@"
+      rootPassword: "Hello2000@5"
