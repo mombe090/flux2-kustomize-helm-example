@@ -5,3 +5,26 @@ resources:
   - ../base/minio
 patchesStrategicMerge:
   - podinfo-values.yaml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
