@@ -18,7 +18,3 @@ spec:
       retries: 3
   # Default values
   # https://github.com/stefanprodan/podinfo/blob/master/charts/podinfo/values.yaml
-  values:
-    auth:
-      rootUser: "admin"
-      rootPassword: "Hello2000@"
