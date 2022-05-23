@@ -17,6 +17,7 @@ spec:
     remediation:
       retries: 3
   values:
+    replicaCount: 5
     service:
       type: LoadBalancer
     auth:
